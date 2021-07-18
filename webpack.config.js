@@ -8,7 +8,11 @@ const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
 
 module.exports = {
     mode: 'development',
-    entry: ["@babel/polyfill", "./src/index.js"],
+    entry: [
+        "@babel/polyfill",
+        "./src/index.js",
+        './src/styles.scss'
+    ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: filename('js')
