@@ -33,10 +33,6 @@ module.exports = {
                 use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
-                test: /\.mp3|.wav$/,
-                loader: 'file-loader'
-            },
-            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/inline',
             },
